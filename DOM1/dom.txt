@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        ID: <input type="text" id="num">
+        NAME: <input type="text" id="name">
+        SURNAME: <input type="text" id="surname">
+        <button onclick="create()">Add data</button>
+        <ul id="list"> 
+            <li> <b>ID NAME SURNAME</b></li>
+        </ul>
+        <script>
+            let num = document.getElementById("num")
+            let name = document.getElementById("name")
+            let surname = document.getElementById("surname")
+            let list = document.getElementById("list")
+
+            function create() {
+                let li = document.createElement("li")
+                list.appendChild(li)
+                li.innerHTML = num.value + " " + name.value + " " + surname.value
+            }
+        </script>
+    </body>
+</html>
+</body>
+</html>
